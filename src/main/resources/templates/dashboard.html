@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CoinDash Dashboard</title>
+</head>
+<body>
+Dashboard
+<tr th:each="cryptocoin : ${cryptoCoins}">
+    <td th:text="${cryptocoin.id}">1</td><br/>
+    <td><a href="#" th:text="${cryptocoin.name}">Title ...</a></td><br/>
+    <td th:text="${cryptocoin.priceUsd}">Text ...</td><br/>
+</tr>
+</body>
+</html>
