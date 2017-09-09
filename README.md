@@ -1,0 +1,2 @@
+# coindash
+Dashboard for cryptocoins
